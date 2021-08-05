@@ -18,13 +18,18 @@ section {
   width: 100%;
 }
 
+
 main {
   height: 90%;
   width: 100%;
 }
 
+.right-img-content {
+  width: 100%; 
+}
+
 .instagram-logo {
-  width: 75%;
+  width: 100%;
 }
 
 .content-box {
@@ -32,22 +37,27 @@ main {
   margin: auto;
 }
 
+.flex > img{
+  display: none;
+}
+
 .top-box {
   height: 100%;
+  width: 275px; 
+  margin: auto;
   text-align: center;
-  border: 1px solid black;
+
   box-sizing: border-box;
   padding-bottom: 20px;
 }
 
 .top-box input {
-  width: 70%;
+  width: 100%;
   padding: 10px 5px;
   margin-bottom: 6px;
   font-size: 14px;
   color: lightgray;
   border: 1px solid lightgray;
-  border-radius: 2px;
   box-sizing: border-box;
 }
 
@@ -62,21 +72,8 @@ main {
   font-weight: 700;
 }
 
-.top-box a {
-  display: block;
-  margin-top: 40px;
-  color: navy;
-  font-weight: 500;
-}
-
-.top-box a:nth-of-type(2) {
-  margin-top: 15px;
-  font-size: 13px;
-}
-
 hr {
-  margin: 0;
-  width: 70%;
+
   border: none;
   border-bottom: 1px solid lightgrey;
 }
@@ -91,12 +88,130 @@ hr {
   font-size: 14px;
 }
 
-.store-logos {
-  width: 3%;
+
+.fb-login {
+  margin: 35px 0px 17px;
+  font-size: 15px;
+  font-weight: 550;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.fb-login a{
+  color: midnightblue;
+}
+.fb-logo{
+  width: 6%;
+  margin-right: 5px;
+}
+
+.forgot-pw {
+  font-size: 14px;
+  color: midnightblue;
+}
+
+.mid-box {
+  width: 100%;
+  color: darkslategray;
+  text-align: center;
+  margin: 70px 0;
+}
+
+.mid-box a{
+  color: dodgerblue;
+  font-weight: 550;
+}
+
+.app-section {
+  text-align: center;
+}
+
+.app-section p {
+  margin: 20px 0;
+  color: darkslategray;
+}
+.app-section img{
+  width: 38%;
 }
 
 footer {
-  height: 20%;
-  width: 100%;
-  background-color: white;
+  margin-top: 65px;
+
+}
+
+.nav {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.nav a {
+  color: gray;
+  margin: 3px 7px; 
+  font-size: 15px;
+}
+
+.lang-copyright{
+  color: gray;
+  margin-top: 5px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+
+footer select{
+  background: #f1f1f1; 
+  color: gray;
+  border: none;
+  position: relative;
+  margin-right: 10px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 452px) {
+  body{
+    background-color: #f1f1f1;
+  }
+  .top-border{
+    margin-top: 55px;
+    padding-bottom: 15px;
+    width: 100%;
+    border: 1px solid lightgray;
+    background-color: white;
+  }
+  .mid-box {
+    margin: 10px 0;
+    background-color: white;
+    padding: 25px 0;
+    border: 1px lightgray solid;
+  }
+
+  .app-section {
+    margin: px 0;
+  }
+
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 874px) {
+  .content-box {
+      width: 750px;
+  }
+  .flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .right-img-content{
+    width: 50%;
+  }
+
+  .flex > img{
+    margin-top: 55px;
+    display: block;
+    width: 40%;
+  }
 }

@@ -13,34 +13,60 @@
   </head>
   <body>
     <section>
-      <div main>
-        <div class = "content-box">
-          <div class="top-box">
-              <img class = "instagram-logo" src = "https://assets.codepen.io/6060109/ig-logo.png">
-              <form>
-                <input type = "text" placeholder= "Phone number, username, or email">
-                <input type = "password" placeholder = "Password">
-                <input type = "submit" value = "Log in">
-              </form>
-              <hr> 
-              <p><span>OR</span></p>
-              
-              <a href="#">Log in with Facebook</a>
-              <a href="#">Forgot password?</a>
+        <div> 
+          <div class = "content-box">
+            <div class = "flex">  
+              <div class="right-img-content">
+                <div class = "top-border">
+                  <div class="top-box">
+                      <img class = "instagram-logo" src = "https://assets.codepen.io/6060109/ig-logo.png">
+                      <form>
+                        <input type = "text" placeholder= "Phone number, username, or email">
+                        <input type = "password" placeholder = "Password">
+                        <input type = "submit" value = "Log in">
+                      </form>
+                      <hr>
+                      <p><span>OR</span></p>
+                      <div class = "fb-login">
+                        <img class = "fb-logo" src = "facebook.svg">
+                        <a href="#">Log in with Facebook</a>
+                      </div>
+                      <a class = "forgot-pw" href="#">Forgot password?</a>
+                  </div>
+                </div>
+                <div class = "mid-box">Don't have an account? <a href = "#">Sign up</a></div>
+                <div class = "app-section">
+                  <p> Get the app</p>
+                  <img  src = "https://assets.codepen.io/6060109/IG-app-store-button.png">
+                  <img  src = "https://assets.codepen.io/6060109/IG-Google-Play-Button.png">
+                </div>
+              </div>
+              <img src = "https://assets.codepen.io/6060109/IG-phone.jpeg">
+            </div>
           </div>
-          <div class = "mid-box">Don't have an account? <a href = "#">Sign up</a></div>
-          <p>Get the app</p>
-          <img class = "store-logos" src = "https://assets.codepen.io/6060109/IG-app-store-button.png">
-          <img class = "store-logos" src = "https://assets.codepen.io/6060109/IG-Google-Play-Button.png">
-          
-
-    </div>
-      
-
-      </main>
+          </div>
+        </main>
       <footer>
+        <div class="nav">
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Jobs</a>
+          <a href="#">Help</a>
+          <a href="#">API</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Top Accounts</a>
+          <a href="#">Hashtags</a>
+          <a href="#">Locations</a>
+        </div>
+        <div class="lang-copyright">
+          <select name="languages" id="languages">
+          <option value="English">English</option>
+          <option value="English-UK">English (UK)</option>
+          </select>
+          &copy; 2021 Instagram from Facebook
+        </div>
       </footer>
-
     </section>
   </body>
 </html>
